@@ -31,7 +31,7 @@
 		<h2>
 			Heed my call, and...
 		</h2>
-		<h1 id=gay1>
+		<h1 id="gay1">
 			<em>Be</em>
 			<span>GAY</span>
 		</h1>
