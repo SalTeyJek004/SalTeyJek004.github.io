@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Turnips</title>
+	<script src="./javascript/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="app">
+		<h1>Numerical Turnips: {{ Math.floor(NumericalTurnips) }}</h1>
+		<h3>Numerical Turnips per second: {{ Math.floor(NTPS) }}</h3>
+		<button v-on:click="IncreaseNTPS">+1 NTPS</button>
+	</div>
+	<script src="./javascript/main.js"></script>
+</body>
+</html>

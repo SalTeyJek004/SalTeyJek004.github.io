@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atomic Fractals</title>
+        <script src="./vue.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="Atoms">
+            <h1>Atoms: {{ Math.floor(Atoms) }}</h1>
+            Atoms Per Second: {{ Math.floor(APS) }}
+        </div>
+        <h2>Atomic Constuctors</h2>
+        <div id="AtomicConstructors">
+            <button v-on:click="BuyTier1">
+                Tier: 1<br>
+                Amount: {{ Math.floor(Tier1.Amount) }}<br>
+                Untill Upgrade: {{ 10 - Tier1.TillUpgrade }}<br>
+                Multiplier: {{ Tier1.Multiplier }}x<br>
+                Cost: {{ Tier1.Cost }}
+            </button>
+            <button v-on:click="BuyTier2">
+                Tier: 2<br>
+                Amount: {{ Math.floor(Tier2.Amount) }}<br>
+                Untill Upgrade: {{ 10 - Tier2.TillUpgrade }}<br>
+                Multiplier: {{ Tier2.Multiplier }}x<br>
+                Cost: {{ Tier2.Cost }}
+            </button>
+            <button v-on:click="BuyTier3">
+                Tier: 3<br>
+                Amount: {{ Math.floor(Tier3.Amount) }}<br>
+                Untill Upgrade: {{ 10 - Tier3.TillUpgrade }}<br>
+                Multiplier: {{ Tier3.Multiplier }}x<br>
+                Cost: {{ Tier3.Cost }}
+            </button>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
